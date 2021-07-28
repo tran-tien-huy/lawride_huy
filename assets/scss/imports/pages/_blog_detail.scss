@@ -1,0 +1,75 @@
+.blog-detail-main {
+    .main-content {
+        .container {
+            .main-content__wrapper {
+                .col-8-12 {
+                    .content--left {
+                        .post__wrapper {
+                            .post__item {
+                                &-content {
+                                    .txt-content {
+                                        p {
+                                            margin-bottom: 30px;
+                                        }
+                                    }
+                                }
+                                &-footer {
+                                    .post__item-footer-wrapper {
+                                        @include flex_center_vert;
+                                        flex-wrap: wrap;
+                                        .col {
+                                            padding: 0;
+                                            .content--left {
+                                                @include flex_center_vert;
+                                                justify-content: flex-start;
+                                                .tags {
+                                                    &__list {
+                                                        @include flex_center_all;
+                                                        &-item {
+                                                            &:not(:last-child) {
+                                                                margin-right: 10px;
+                                                            }
+                                                        }
+                                                        &-link {
+                                                            background-color: $white;
+                                                            color: #868686;
+                                                            padding: 10px 25px;
+                                                            border-radius: 0;
+                                                            border: 1px solid $grey;
+                                                            @include transition(0.4s);
+                                                            &:hover {
+                                                                background-color: $light-brown;
+                                                                color: $white;
+                                                                @include transition(0.4s);
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .content--right {
+                                                @include flex_center_vert;
+                                                justify-content: flex-end;
+                                                .social-network {
+                                                    &__list {
+                                                        &-link {
+                                                            color: $black;
+                                                            background-color: #f1f3f8;
+                                                            &:hover {
+                                                                @include transition(0.4s);
+                                                                background-color: $light-brown;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

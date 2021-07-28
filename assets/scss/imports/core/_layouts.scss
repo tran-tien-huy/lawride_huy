@@ -1,0 +1,41 @@
+.col {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-1-12 {
+    flex-basis: calc(100% / 12);
+    width: calc(100% / 12);
+}
+
+
+.col-3-12 {
+    flex-basis: calc((100% / 12) * 3);
+    width: calc((100% / 12) * 3);
+}
+
+.col-4-12 {
+    flex-basis: calc((100% / 12) * 4);
+    width: calc((100% / 12) * 4);
+}
+
+.col-6-12 {
+    flex-basis: calc((100% / 12) * 6);
+    width: calc((100% / 12) * 6);
+}
+
+
+.col-8-12 {
+    flex-basis: calc((100% / 12) * 8);
+    width: calc((100% / 12) * 8);
+}
+
+.col-10-12 {
+    flex-basis: calc((100% / 12) * 10);
+    width: calc((100% / 12) * 10);
+}
+
+.col-12-12 {
+    flex-basis: 100%;
+    width: 100%;
+}

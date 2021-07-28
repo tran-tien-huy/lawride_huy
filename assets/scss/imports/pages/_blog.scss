@@ -1,0 +1,31 @@
+.blog-main {
+    .main-content {
+        .container {
+            .main-content__wrapper {
+                .col-8-12 {
+                    .content--left {
+                        .post__wrapper {
+                            .post__item {
+                                &-content {
+                                    padding: 50px 70px 50px 30px;
+                                    background-color: $white;
+                                    box-shadow: -6px 7px 13px -9px rgba(0,0,0,0.75);
+                                    border-radius: 15px 0 0 15px;
+                                    position: relative;
+                                    z-index: calc(#{$base-z-index} + 1);
+                                    top: -60px;
+                                    left: 30px;
+                                    margin-bottom: 40px;
+                                    .read-more {
+                                        font-size: var(--fsz-minor);
+                                        line-height: var(--lh-minor);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.header {
+    --base-header-z-index: $base-z-index;
+    background-color: $black;
+    z-index: calc(var(--base-header-z-index) + 4);
+    &__wrapper {
+        padding: 0 8.3%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left:0;
+            width: 30%;
+            height: 100%;
+            background-color: $light-brown;
+        }
+    }
+    &__logo {
+        --logo-img-max-w: 195px;
+        height: 100%;
+        a {
+            height: 100%;
+            @include flex_center_vert();
+            position: relative;
+            z-index: calc( #{$base-z-index} + 1);
+        }
+        &-img {
+            width: 100%;
+            max-width: var(--logo-img-max-w);
+        }
+
+    }
+    &__menu-wrapper {
+        margin-left: auto;
+        padding-right: 50px;
+    }
+    &__menu {
+        height: 100%;
+        --fsz-menu-link: 18px;
+        --lh-menu-link: 30px;
+        @include flex_center_all;
+        &-item {
+            height: 100%;
+        }
+        &-link {
+            height: 100%;
+            width: 100%;
+            --padding-all: 33px 15px;
+            color: $white;
+            font-size: var(--fsz-menu-link);
+            line-height: var(--lh-menu-link);
+            text-transform: capitalize;
+            padding: var(--padding-all);
+            @include flex_center_all();
+            @include transition(0.4s);
+            .icon-plus {
+                margin-left: 5px;
+            }
+        }
+
+    }
+    &__action {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        .button__contact {
+            color: $dark-brown;
+            font-weight: 700;
+            text-transform: capitalize;
+            border-radius: 50px;
+            border: 2px solid #4d4d4d;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        .hamburg__wrapper {
+            padding-left: 180px;
+            cursor: pointer;
+            @include transition(0.4s);
+        }
+    }
+}
